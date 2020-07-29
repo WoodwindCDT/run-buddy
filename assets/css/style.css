@@ -138,11 +138,11 @@ section {
     border-bottom: 3px solid;
   }
 
-  .primary-border {
+.primary-border {
     border-color: #fce138;
   }
 
-  .secondary-border {
+.secondary-border {
       border-color: #39a6b2;
   }
 
@@ -183,6 +183,7 @@ section {
     font-size: 38px;
 }
 
+/* Beginning of Trainer Bio */
 .trainers {
     text-align: center;
 }
@@ -195,6 +196,7 @@ section {
     overflow: auto;
 }
 
+/* Trainer Image adjustment */
 .trainers img {
     width: 35%;
     float: left;
@@ -214,6 +216,7 @@ section {
     text-align: right;
 }
 
+/* Trainer Text Edits */
 .trainer-bio h3 {
     font-size: 32px;
     margin-bottom: 8px;
