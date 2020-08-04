@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
+/* Color and Font for the entire page */
 body { 
-    /* Color and Font for the entire page */
     font-family: Arial, Helvetica, sans-serif;
     color: #39a6b2;
 }
 
+/* Header style Start */
 header {
-    /* header style */
     padding: 20px 35px;
     background-color: #39a6b2;
     justify-content: space-between;
@@ -48,8 +48,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* Header style End */
 
-/* Footer Style */
+/* Footer Style Start */
 footer {
     display: flex;
     justify-content: space-between;
@@ -77,8 +78,9 @@ footer a {
 section {
     padding: 60px;
 }
+/* Footer Style End */
 
-/* hero style start */
+/* Hero style start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -128,7 +130,7 @@ section {
     font-size: 16px;
 }
 
-/* hero content section*/
+/* Hero content section*/
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -143,30 +145,31 @@ section {
     font-size: 55px;
     color: #fce138;
 }
-/* hero style end */
+/* Hero content section & Hero style End*/
 
-.intro {
-    text-align: center;
+/* Flex Row to Elements */
+.flex-row {
+    display: flex;
 }
 
-/* What-We-Do & What-You-Do titles*/
-
+/* What-We-Do & What-You-Do titles */
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
-  }
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
 
 .primary-border {
     border-color: #fce138;
-  }
+}
 
 .secondary-border {
       border-color: #39a6b2;
-  }
+}
 
 .intro p {
     margin: 0 auto;
@@ -174,10 +177,10 @@ section {
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
+    text-align: center;
 }
 
 .steps {
-    text-align: center;
     background: #fce138;
 }
 
@@ -204,11 +207,9 @@ section {
 .steps span {
     font-size: 38px;
 }
+/* What-We-Do & What-You-Do titles End */
 
 /* Beginning of Trainer Bio */
-.trainers {
-    text-align: center;
-}
 
 .trainer {
     width: 900px;
@@ -217,6 +218,7 @@ section {
     color: #fce138;
     overflow: auto;
 }
+/* Beginning of Trainer Bio End */
 
 /* Trainer Image adjustment */
 .trainers img {
@@ -237,6 +239,7 @@ section {
 .text-right {
     text-align: right;
 }
+/* Trainer Image adjustment End */
 
 /* Trainer Text Edits */
 .trainer-bio h3 {
@@ -254,11 +257,11 @@ section {
     font-size: 17px;
     line-height: 1.3;
 }
+/* Trainer Text End */
 
 /* Reach Out Styles Begin */
 .contact {
     background-color: #024e76;
-    text-align: center;
 }
 
 .contact-info div {
@@ -296,4 +299,4 @@ section {
 }
 /* Reach Out Styles End */
 
-/* Privacy Policy Content*/
+/* Privacy Policy Content */
