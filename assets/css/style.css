@@ -83,19 +83,18 @@ section {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hero-form {
     padding: 20px;
-    width: 500px;
     border: #024e76 solid 3px;
-    position: absolute;
     background-color: #fce138;
     color: #024e76;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -127,6 +126,22 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+/* hero content section*/
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 /* hero style end */
 
