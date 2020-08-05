@@ -288,6 +288,19 @@ section {
 }
 /* Trainer Text End */
 
+/* Service Grid Start */
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+
 /* Reach Out Styles Begin */
 .contact {
     background-color: #024e76;
