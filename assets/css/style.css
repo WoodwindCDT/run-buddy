@@ -359,16 +359,62 @@ section {
 /* Beginning of Trainer Bio End */
 
 /* Trainer Image adjustment */
-.trainer img {
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
-.text-left {
-    text-align: left;
+.trainer-img h3, .trainer-img h4 {
+    position: relative;
+    z-index: 99;
+    top: 200px;
+    transition: 0.6s;
 }
-  
-.text-right {
-    text-align: right;
+
+.trainer-img h4 {
+    transition-delay: 0.1s;
+}
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#fce1384d, #024e76);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.trainer:hover .trainer-img::after {
+    opacity: 1;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+}
+
+.trainer-1 {
+    background-image: url("../images/01-05-trainers/trainer-1.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.trainer-2 {
+    background-image: url("../images/01-05-trainers/trainer-2.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.trainer-3 {
+    background-image: url("../images/01-05-trainers/trainer-3.jpg");
+    background-size: cover;
+    position: relative;
 }
 /* Trainer Image adjustment End */
 
@@ -376,6 +422,18 @@ section {
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;
+}
+
+.trainer-bio h3 {
+    font-size: 28px;
+    display: none;
+}
+  
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: none;
 }
 
 .trainers {
@@ -386,17 +444,18 @@ section {
     justify-content: space-around;
 }
 
-.trainer-bio h3 {
-    font-size: 28px;
+.trainer-img h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
 }
 
-.trainer-bio h4 {
+.trainer-img h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
 }
 
-.trainer-bio p {
+.trainer-img p {
     font-size: 17px;
 }
 /* Trainer Text End */
@@ -661,8 +720,16 @@ section {
         writing-mode: unset;
         grid-column: 1 / -1;
         grid-row: -1;
-      }
-}
+    }
+
+    .trainer-img h3, .trainer-img h4, .trainer-img::after {
+        display: none;
+    }
+
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
+    }
+}    
 
 /* Media Query for Mobile Phones and Smaller */
 @media screen and (max-width: 575px) {
